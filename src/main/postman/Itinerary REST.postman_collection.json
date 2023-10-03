@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "dd2b9cce-aee4-4143-b288-e4ff2172a1e9",
+		"name": "Itinerary REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13403281"
+	},
+	"item": [
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/itinerary/search",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"itinerary",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ONE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/itinerary/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"itinerary",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/itinerary/search/buenos aires",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"itinerary",
+						"search",
+						"buenos aires"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET itinereary Destination",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/itinerary/0/destination",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"itinerary",
+						"0",
+						"destination"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/itinerary/0",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"itinerary",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

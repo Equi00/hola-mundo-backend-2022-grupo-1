@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "7fce7047-6ddf-4953-a802-3479ac901a16",
+		"name": "Vehicle REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13403281"
+	},
+	"item": [
+		{
+			"name": "GET ALL Vehicles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/vehicle/search",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"vehicle",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ONE Vehicle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/vehicle/5",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"vehicle",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Vehicle",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/vehicle/5",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"vehicle",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Vehicle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/vehicle/search/audi",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"vehicle",
+						"search",
+						"audi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "4fefdd5e-c217-4c33-87c7-6e0994cc78ce",
+		"name": "Destination REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13403281"
+	},
+	"item": [
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/destination",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"destination"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ONE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/destination/5",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"destination",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

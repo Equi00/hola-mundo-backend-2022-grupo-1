@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "782d43ce-3709-43e9-b2cf-a908eb092845",
+		"name": "User REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13403281"
+	},
+	"item": [
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/user",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ONE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/user/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ezequiel\",\r\n    \"surname\": \"Iozzia\",\r\n    \"userName\": \"ezeoyola\",\r\n    \"countryOfResidence\": \"Italia\",\r\n    \"travelDays\": 8,\r\n    \"email\": \"ezeoyola@gmail.com\",\r\n    \"friends\" : [\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"Mateo\"\r\n        }\r\n    ],\r\n    \"desiredDestinations\": [\r\n        {\r\n            \"country\": \"Argentina\",\r\n            \"city\": \"Mar del Plata\",\r\n            \"baseCost\": 10000.0,\r\n            \"id\": 1\r\n        }\r\n    ],\r\n    \"visitedDestinations\": [\r\n        {\r\n            \"country\": \"Argentina\",\r\n            \"city\": \"Buenos Aires\",\r\n            \"baseCost\": 3000.0,\r\n            \"id\": 0\r\n        }\r\n    ],\r\n    \"vehiclePreference\": {\r\n        \"name\": \"Combined\",\r\n        \"specifiedBrand\": \"Honda\",\r\n        \"vehiclePreferences\": [\r\n            {\r\n                \"name\": \"Neophyte\",\r\n                \"specifiedBrand\": \"\"\r\n            },\r\n            {\r\n                \"name\": \"Selective\",\r\n                \"specifiedBrand\": \"Honda\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/user/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ONE by Username",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/user/username/dtorres93",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"username",
+						"dtorres93"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST visited destination",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/user/2/add-destination/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"2",
+						"add-destination",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
